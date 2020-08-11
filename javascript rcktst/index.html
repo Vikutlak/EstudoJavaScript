@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <script>
+            function lerVetor(usuarios) {
+                for(pessoas of usuarios){                    
+                    console.log("O " + pessoas.nome + " possui as seguintes habilidades: " + pessoas.habilidade.join(", "));                    
+                }
+            }
+
+            var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidade: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidade: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+
+            lerVetor(usuarios);
+        </script>
+    </body>
+</html>

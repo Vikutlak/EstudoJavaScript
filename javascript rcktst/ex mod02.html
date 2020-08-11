@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ex2</title>
+    </head>
+    <body>
+        <div>
+            <button class="botao">Cria quadrado</button>
+            <div class="box"></div>
+        </div>
+
+        <script>
+            var btnElement = document.querySelector('button.botao');
+            btnElement.onclick = function (){
+                var boxElement = document.createElement('div.box');
+                boxElement.style.width = 100;
+                boxElement.style.height = 100;
+                boxElement.style.backgroundColor = '#f70';
+            }
+        </script>
+    </body>
+</html>

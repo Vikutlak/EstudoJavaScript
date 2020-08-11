@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input id="nome" />
+        </div>
+        <script>
+            var linkElement = document.createElement('a');
+            linkElement.setAttribute('href', 'http://rocketseat.com.br') //settei um link como atributo do linkElement
+            linkElement.setAttribute('title', 'Site da Rocketseat://rocketseat.com.br') //somei mais um atributo (ver no inspecionar)
+ 
+            var textElement = document.createTextNode('Acessar site da Rocketseat'); //criei o que clicar para acessar o link
+            linkElement.appendChild(textElement); //adicionei o textElement como um filho do linkElement
+
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement); //coloquei no site, deixa de ser apenas script se torna body
+        
+            var inputElement = document.querySelector('#nome');
+            containerElement.removeChild(inputElement); //removi a funcão do que tinha lá na div
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" name="nome" />
+            <button class="botao">Adicionar</button>
+        </div>
+
+        <script>
+            // <!-- buscar info com javascript na página(dom) -->
+                                // procurando o input dentro da div chamada app dentro do body
+            // var inputElement = document.querySelector('div#app input');
+            // var inputElement = document.querySelector('input[name=nome]');
+                                // só pega o primeiro que vem
+            // var inputElement = document.querySelector('input');
+                                // pega todos
+            // var inputElement = document.querySelectorAll('input');
+            var inputElement = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.botao');
+
+            btnElement.onclick = function() {
+                var text = inputElement.value;
+
+                alert(text);
+            }
+
+            console.log(inputElement);
+        </script>
+    </body>
+</html>
